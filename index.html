@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Bear&#39;s-学习笔记</title>
+  <link rel="icon" href="./favicon.ico">
+<!-- docsify主题样式 -->
+  <link rel="stylesheet" href="//cdn.staticfile.org/docsify/4.13.1/themes/vue.css">
+  <!-- <link rel="stylesheet" href="./static/css/vue.css"> -->
+  <meta name="description" content="随手笔记">
+  <meta name="keywords" content="随手笔记">
+  <meta name="theme-color" content="#11a8cd">
+</head>
+<body>
+  <nav>
+    <a href="#/">首页</a>
+    <li><a href="#">测试</a>
+        <ul>
+            <li><a href="#/">test1</a></li>
+            <li><a href="#/">test2</a></li>
+        </ul>
+    </li>
+  </nav>
+  <div id="app">加载中...</div>
+  <script>
+    window.$docsify = {
+      el: '#app',
+      // 侧边栏左侧的logo
+      logo: '',
+      // 侧边栏顶部的标题
+      name: '📑学习笔记',
+      // 点击标题后的跳转地址
+      nameLink: '/',
+      // 开启侧边栏，需要目录下有_sidebar.md文件
+      loadSidebar: true,
+      // 自动为每个页面增加标题
+      autoHeader: true,
+      // 读取md文件最大层级
+      subMaxLevel: 3,
+      // 切换页面后跳回页面顶部
+      auto2top: true,
+      // 移动设备合并导航栏到侧边栏
+      mergeNavbar: true,
+      // 加载_404.md
+      // notFoundPage: true,
+      // 改变主题颜色
+      themeColor: "#42b983", //"#fda085"
+      // alias: {
+        // '/.*/_sidebar.md': '/_sidebar.md'
+      // },
+      // 阅读进度条插件配置项
+      // progress: {
+          // position: "top",
+          // color: "var(--theme-color,#42b983)",
+          //  height: "3px",
+      // },
+      // Tip文本高亮插件配置项
+      'flexible-alerts': {
+      style: 'flat',
+      },
+      // 搜索插件配置项
+      search: {
+          maxAge: 86400000,//过期时间,单位毫秒,默认一天
+          paths: 'auto', // or 'auto'
+          placeholder: '🔍请输入搜索关键字',
+          noData: '😒没有搜到呦!',
+          depth: 6,
+      },
+      // 复制代码插件配置项
+      copyCode: {
+        buttonText: '点击复制',
+        errorText: '复制失败',
+        successText: '复制成功',
+      },
+      // 分页导航插件配置项
+      pagination: {
+        previousText: '上一篇',
+        // or
+        nextText: {
+          // '/en/': 'NEXT',
+          '/': '下一篇'
+        },
+        crossChapter: true,
+        crossChapterText: true,
+      },
+    }
+  </script>
+<!-- docsify v4 -->
+  <!-- <script src="./static/js/docsify.min.js"></script> -->
+  <script src="//cdn.staticfile.org/docsify/4.13.1/docsify.min.js"></script>
+<!-- 全文搜索插件 -->
+  <!-- <script src="./static/js/search.min.js"></script> -->
+  <script src="//cdn.staticfile.org/docsify/4.13.1/plugins/search.min.js"></script>
+<!-- 复制代码插件 -->
+  <!-- <script src="./static/js/docsify-copy-code.min.js"></script> -->
+  <script src="//cdn.staticfile.org/docsify-copy-code/2.1.1/docsify-copy-code.min.js"></script>
+<!-- 分页导航插件 -->
+  <script src="./static/js/docsify-pagination.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
+<!-- 缩放图片插件 -->
+  <!-- <script src="./static/js/zoom-image.min.js"></script> -->
+  <script src="//cdn.staticfile.org/docsify/4.13.1/plugins/zoom-image.min.js"></script>
+<!-- 阅读进度条插件 -->
+  <!-- <script src="./static/js/progress.min.js"></script> -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script> -->
+<!-- Tip文本高亮插件 -->
+  <script src="./static/js/docsify-plugin-flexible-alerts.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts"></script> -->
+<!-- docsify-backTop插件 -->
+  <script src="./static/js/docsify-backTop.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/gh/Sumsung524/docsify-backTop/dist/docsify-backTop.min.js"></script> -->
+  <!-- 页脚信息 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script> -->
+</body>
+</html>
